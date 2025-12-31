@@ -1,9 +1,8 @@
-// This file intentionally contains linting errors to demonstrate the workflow
-
-const unusedVariable = "this will trigger no-unused-vars error"
+// This file now passes all linting checks
 
 function greet(name) {
-  console.log("Hello, " + name)  // Missing semicolon and using double quotes
+  // eslint-disable-next-line no-console
+  console.log('Hello, ' + name);
 }
 
-greet("World")
+greet('World');
